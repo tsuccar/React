@@ -28,3 +28,12 @@ Warning:
 Since JSX is closer to JavaScript than to HTML, React DOM uses camelCase property naming convention instead of HTML attribute names.
 
 For example, class becomes className in JSX, and tabindex becomes tabIndex.
+
+Babel compiles JSX down to React.createElement() calls.
+Tip:
+
+We recommend using the “Babel” language definition for your editor of choice so that both ES6 and JSX code is properly highlighted.
+
+Unlike browser DOM elements, React elements are plain objects, and are cheap to create. React DOM takes care of updating the DOM to match the React elements.
+
+One might confuse elements with a more widely known concept of “components”. We will introduce components in the next section. Elements are what components are “made of”
